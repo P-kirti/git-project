@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Selector</title>
+<style>
+    h1{
+        color: crimson;
+       
+    }
+    p{
+        font-size: 30px;
+        color: blue;
+    }
+    #sample{
+        background-color:rgba(110, 231, 29, 0.732);
+    border: solid red 2px;
+    }
+    .para{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .head{
+        color: purple;
+    }
+h3.head{
+    color:red;
+    background-color: yellow;
+}
+h3, h2, h4 {
+    background-color: aqua;/* multipe element selctor*/
+}
+/*universal selector*/
+*{
+text-align: center;
+background-color: coral;
+}
+
+</style>
+
+
+
+</head>
+<body> 
+    <!--Simple:element,id,class,universal selector-->
+    <!--id selector-->
+<h1 id="sample">Simple Selectors</h1>
+<!--class selector-->
+<p class="para">Lorem ipsum dolor sit amet consectetur.</p>
+<p class="para">paragraph 2</p>
+<p class="para">paragraph 3</p>
+<p class="para">paragraph 4</p>
+<p class="para">paragraph 5</p>
+<!--combination of class and element selector-->
+<h2 class="head">heading 3</h3>
+<h2 class="head">heading 2</h2>
+<h4 class="head">heading 4</h4>
+<h5 class="head">heading 5</h5>
+<h3 class="head">heading 1</h3>
+<h3 class="head">heading 1</h3>
+<h3>heading 1</h3>
+<h3>heading 1</h3>
+</body>
+</html>

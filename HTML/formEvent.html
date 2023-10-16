@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action=""
+      onsubmit="alert('form submitted')"
+      onreset="console.log('form Reset')"
+    >
+      <!--types of form event-1)onsubmit 2)onrest 3)onblur 4)onfocused 5)onchange 6)oninvalid 7)oninput 8)onselect 9)onsearch-->
+      <label for="">Blur and Focuesd Example:</label>
+      <input
+        type="text"
+        name=""
+        id=""
+        onblur="console.log('input field is blurred now')"
+        onfocus="console.log('input field is focuse now')"
+      />
+      <br />
+      <hr />
+      <br />
+      <label for="">Example of Onchanged:</label>
+      <input
+        type="text"
+        name=""
+        id=""
+        value="sample"
+        onchange="console.log('value changed')"
+        oninput="console.log('user added input')"
+      />
+      <br /> 
+      <hr />
+      <br />
+      <input
+        type="text"
+        pattern="[A-Za-z\s]+$"
+        value="sample check"
+        title="numers and special characters are not allowd"
+        oninvalid="console.log('invalid value')"
+        onselect="console.log('value selected')"
+      />
+      <label for="">for onsearch example:</label>
+      <input type="search" name="" id="" onsearch="alert ('value search')">
+      <input type="submit" value="submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

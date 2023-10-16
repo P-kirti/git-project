@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>combinators </title>
+<style>
+    /*descendents*/
+    /*div p{
+        color: red; 
+        font-size: 20px; 
+    }*/
+        /*child*/
+   /* div>p{
+        color: red; 
+        font-size: 20px;
+    }*/
+          /*adjacent sibling*/
+    /*div+p{
+        color: red; 
+        font-size: 20px; 
+    } */
+    /*general sibling*/
+    div~p{
+        color: red;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <!--selectors are that are created using the relation between elements
+    types- descendents(space), child(>), adjacent sibling(+), general sibling(~)-->
+    
+   <!--descendents(space)--> 
+   <div class="div 1"> 
+    <p>para 1</p>
+    <p>para 2</p>
+    <section class="section 2"> 
+    <p class="para3">para 3</p>
+    <p class="para4">para 4</p>
+</section>
+
+</div>
+<p> para5</p>
+<p> para6</p>
+</body>
+</html>

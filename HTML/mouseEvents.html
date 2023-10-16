@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Events</title>
+  </head>
+  <body>
+    <!--onclick -it can applicable for button ,paragraph,div-->
+    <button onclick="console.log('button clicked')">click</button>
+    <p onclick="alert('clicked on para')">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit suscipit
+      sequi voluptatem harum adipisci voluptas blanditiis fugit error asperiores
+      mollitia.
+    </p>
+    <div
+      style="height: 100px; width: 506px; background-color: blueviolet"
+      onclick="console.log('clicked in div')"
+    ></div>
+    <br />
+    <hr />
+    <br />
+    <!--ondblclick -it can applicable for button ,paragraph,div-->
+    <button ondblclick="console.log('button clicked')">dblclick</button>
+    <p ondblclick="alert('clicked on para')">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit suscipit
+      sequi voluptatem harum adipisci voluptas blanditiis fugit error asperiores
+      mollitia.
+    </p>
+    <div
+      style="height: 100px; width: 506px; background-color: blueviolet"
+      ondblclick="console.log('clicked in div')"
+    ></div>
+    <br />
+    <hr />
+    <br />
+    <!--onmousemove-->
+    <p onmousemove="console.log('moved on para')">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit suscipit
+      sequi voluptatem harum adipisci voluptas blanditiis fugit error asperiores
+      mollitia.
+    </p>
+    <div
+      style="height: 100px; width: 506px; background-color: blueviolet"
+      onmousemove="console.log('moved in div')"
+    ></div>
+    <br />
+    <!--onmouseenter,onmouseleave-->
+    <div
+      style="height: 100px; width: 506px; background-color: green"
+      onmouseenter="console.log('mouse enter')"
+      onmouseleave="console.log('mouse left')"
+    ></div>
+    <br />
+    <hr />
+    <br />
+    <div
+      id="hey"
+      style="height: 100px; width: 506px; background-color: green"
+      onmouseenter="enter()"
+      onmouseleave="leave()"
+    ></div>
+    <script>
+      function enter() {
+        console.log("mouse enter");
+        document.getElementById("hey").style.backgroundColor = "red";
+        document.getElementById("hey").style.height = "700px";
+        document.getElementById("hey").style.width = "500px";
+      }
+      function leave() {
+        console.log("mouse left");
+        document.getElementById("hey").style.backgroundColor = "green";
+        document.getElementById("hey").style.height = "200px";
+        document.getElementById("hey").style.width = "500px";
+      }
+    </script>
+    <hr />
+    <div
+      style="background-color: aqua; height: 100px; width: 200px"
+      onmouseout="console.log('mouse out')";
+
+      onmousedown="console.log('mouse down')";
+      onmouseup="console('mouse up')";
+      onmouseover="console.log('mouse over')";
+      onwheel="console.log('mouse on wheel')"
+      
+    ></div>
+  </body>
+</html>
